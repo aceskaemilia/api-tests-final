@@ -14,8 +14,8 @@ pipeline {
 
 def buildDockerImage(){
     echo "Building of node application is starting.."
-    sh "docker build -t aceskaemilija/api-tests:lates ."
+    sh "docker build -t aceskaemilija/api-tests:latest ."
 
     echo "Pushing image to docker registry.."
-    sh "docker push aceskaemilija/api-tests"
+    sh "docker push aceskaemilija/api-tests:latest"
 }
